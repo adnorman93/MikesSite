@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MA Live Performance</title>
+    <link rel="stylesheet" href="performance2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="header">
+        <p>Michael Agidius</p>
+        <p class="second-title">Live Performance</p>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Repair')">
+          <i class="fa fa-fw fa-wrench"></i>Repair
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Gallery')">
+          <i class="fa fa-fw fa-photo"></i>Gallery
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Contact')">
+          <i class="fa fa-fw fa-envelope"></i>Contact
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Calendar')">
+          <i class="fa fa-fw fa-calendar"></i>Calendar
+        </button>
+      </div>
+      <div id="Repair" class="tabcontent Repair">
+        <h2>Need an instrument fixed?</h2>
+        <img src="darrell-fraser-pcp7-Eh0dd4-unsplash.jpg" alt="Saxophone" />
+        <p class="HERElink">
+          Check out Michael's band instrument repair service here
+        </p>
+      </div>
+
+      <div id="Gallery" class="tabcontent Gallery">
+        <h3 id="coveralbum">Listen to Michael's cover album here!</h3>
+
+        <div class="responsivevid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/3k8HoUxJOQA"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="responseGallery">
+          <img
+            class="soprano"
+            src="Mike soprano sax 2019.jpg"
+            alt="live show"
+            width="667"
+            height="1000"
+          />
+        </div>
+      </div>
+
+      <div id="Contact" class="tabcontent Contact">
+        <section class="contactinfo">
+          <h2>Michael Agidius</h2>
+          <p>Saxophone & Director of WWU Big Band</p>
+          <h3>Jazz, Rock, Blues, Latin, Classical</h3>
+          <p>509-540-5683</p>
+          <p>macougar6@gmail.com</p>
+          <p>Solo to Big Band and everything in between</p>
+        </section>
+        <section id="Contact" class="signup">
+          <h2 class="signupheader">
+            Sign up to recieve email notifications of Michael's upcoming
+            performances
+          </h2>
+          <form action="/action_page.php">
+            <label for="fname">First name:</label><br />
+            <input
+              maxlength="30"
+              type="text"
+              id="fname"
+              name="fname"
+              value="John"
+            /><br />
+            <label for="lname">Last name:</label><br />
+            <input
+              maxlength="30"
+              type="text"
+              id="lname"
+              name="lname"
+              value="Doe"
+            /><br /><br />
+            <form>
+              <label for="email">Enter your email:</label><br />
+              <input maxlength="30" type="email" id="email" name="email" />
+            </form>
+            <input type="submit" value="Submit" />
+          </form>
+        </section>
+      </div>
+
+      <div id="Calendar" class="tabcontent">
+        <div class="responsive">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=cTNxanA0N3Y4YjdhdTk4N2ZkczIwNmhwY2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0"
+          ></iframe>
+        </div>
+      </div>
+      <script src="performance2.js"></script>
+    </section>
+  </body>
+</html>
